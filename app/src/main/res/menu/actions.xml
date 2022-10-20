@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/edit"
+        android:orderInCategory="100"
+        android:title="Hack tsd"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_workbook" android:orderInCategory="100" android:title="hackTSD"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_about" android:orderInCategory="100" android:title="About Application"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_exit" android:orderInCategory="100" android:title="Exit"
+        app:showAsAction="never" />
+</menu>

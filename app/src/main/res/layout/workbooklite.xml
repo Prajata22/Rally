@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbarStyle="outsideInset" android:id="@+id/scrollView1" android:background="#141517" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:isScrollContainer="true">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/driver_photo" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_weight="1">
+                <TextView android:textSize="18sp" android:textColor="#63a26b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GOTO Tulip: " android:singleLine="true"/>
+                <EditText android:textSize="20sp" android:textStyle="bold" android:textColor="#fff" android:textColorHint="#545454" android:id="@+id/zone_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter Tulip Number" android:singleLine="true" android:inputType="phone"/>
+            </LinearLayout>
+            <ImageButton android:layout_gravity="center_vertical" android:id="@+id/go" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/check"/>
+        </LinearLayout>
+        <TableRow android:layout_gravity="center_horizontal" android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/save" android:background="@drawable/next_button_background_selector" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="100dp" android:text="Correct" android:layout_weight="1"/>
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/tc" android:background="@drawable/next_button_background_selector" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="100dp" android:layout_marginLeft="25dp" android:text="Tc" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center_horizontal" android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/first" android:background="@drawable/btn_blue" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="100dp" android:text="First" android:layout_weight="1"/>
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/last" android:background="@drawable/btn_blue" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="100dp" android:layout_marginLeft="25dp" android:text="Last" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="24sp" android:textColor="#fff" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tulip :  " android:singleLine="true"/>
+            <TextView android:textSize="24sp" android:textColor="#fff" android:layout_gravity="center" android:id="@+id/zone_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textColor="#fff" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RoadBook: "/>
+            <TextView android:textSize="32sp" android:textColor="#fff" android:layout_gravity="center" android:id="@+id/rbodo_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="243.56"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textColor="#000" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GPS Odo :  "/>
+            <TextView android:textSize="24sp" android:textColor="#000" android:layout_gravity="center" android:id="@+id/gpsodo_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="246.45"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textColor="#000" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Car Odo :  "/>
+            <TextView android:textSize="24sp" android:textColor="#000" android:layout_gravity="center" android:id="@+id/carodo_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="251.43"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="36sp" android:textColor="#fff" android:layout_gravity="center" android:id="@+id/hh_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="36sp" android:textColor="#fff" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" : "/>
+            <TextView android:textSize="36sp" android:textColor="#fff" android:layout_gravity="center" android:id="@+id/mm_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="36sp" android:textColor="#fff" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" : "/>
+            <TextView android:textSize="36sp" android:textColor="#fff" android:layout_gravity="center" android:id="@+id/ss_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center_horizontal" android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/back" android:background="@drawable/btn_blue" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="100dp" android:layout_marginBottom="10dp" android:text="Back" android:layout_weight="1"/>
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/next" android:background="@drawable/btn_blue" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="100dp" android:layout_marginLeft="25dp" android:layout_marginBottom="10dp" android:text="Next" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="#fff" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Current Speed :  "/>
+            <TextView android:textSize="20sp" android:textColor="#fff" android:layout_gravity="center" android:id="@+id/currentspeed_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="#000" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Next Speed :  "/>
+            <TextView android:textSize="20sp" android:textColor="#000" android:layout_gravity="center" android:id="@+id/nextspeed_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="#000" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Speed Change Odo :  "/>
+            <TextView android:textSize="20sp" android:textColor="#000" android:layout_gravity="center" android:id="@+id/change_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="#000" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Change Time :  "/>
+            <TextView android:textSize="20sp" android:textColor="#000" android:layout_gravity="center" android:id="@+id/changetime_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </TableRow>
+    </LinearLayout>
+</ScrollView>

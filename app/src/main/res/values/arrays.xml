@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="mode">
+        <item>SpeedChart Data</item>
+        <item>RoadBook Data</item>
+        <item>Time Control Data</item>
+        <item>WorkBench</item>
+        <item>Correction</item>
+        <item>Exit</item>
+    </array>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style parent="Sherlock.__Theme.DarkActionBar" name="SherlockDarkActionBar">
+        <item name="android:actionBarWidgetTheme">@style/Theme.Sherlock</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
+        <item name="dropdownListPreferredItemHeight">48dp</item>
+    </style>
+    <style name="Theme.Sherlock.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Theme.Sherlock.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>
